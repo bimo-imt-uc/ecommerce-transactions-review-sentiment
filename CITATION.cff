@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this repository."
+title: "Big Data Analytics Linking E-Commerce Transactions and Review Sentiment Using Natural Language Processing: experiment code"
+type: software
+authors:
+  - family-names: Setyorini
+    given-names: Haryati
+    affiliation: "University of Hayam Wuruk Perbanas"
+    orcid: "https://orcid.org/0000-0002-3028-1013"
+  - family-names: Gumelar
+    given-names: Agustinus Bimo
+    affiliation: "Universitas Ciputra"
+    orcid: "https://orcid.org/0000-0003-4977-4800"
+  - family-names: Kholid
+    given-names: Ikhwan
+    affiliation: "University of Hayam Wuruk Perbanas"
+    orcid: "https://orcid.org/0009-0002-7950-529X"
+  - family-names: Junaedi
+    given-names: Lukman
+    affiliation: "Universitas Narotama"
+    orcid: "https://orcid.org/0000-0002-8344-0399"
+  - family-names: Winardi
+    given-names: Slamet
+    affiliation: "Widya Mandala Surabaya Catholic University"
+    orcid: "https://orcid.org/0000-0002-1701-9600"
+  - family-names: Abadi
+    given-names: Satria
+    affiliation: "Universiti Pendidikan Sultan Idris"
+    orcid: "https://orcid.org/0000-0001-7355-9428"

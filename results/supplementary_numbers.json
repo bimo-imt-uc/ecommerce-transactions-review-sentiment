@@ -1,0 +1,95 @@
+{
+ "themes": {
+  "overall_share": {
+   "Non-receipt and waiting": 0.4451,
+   "Wrong or defective item": 0.1479,
+   "Incomplete order": 0.1154,
+   "After-sales and administrative": 0.1058,
+   "Product quality": 0.1034,
+   "Delivery delay": 0.081,
+   "Unassigned": 0.0014
+  },
+  "col_pct_by_status": {
+   "delivered_late": {
+    "After-sales and administrative": 0.0861,
+    "Delivery delay": 0.1524,
+    "Incomplete order": 0.0333,
+    "Non-receipt and waiting": 0.6616,
+    "Product quality": 0.0407,
+    "Unassigned": 0.001,
+    "Wrong or defective item": 0.0249
+   },
+   "delivered_on_time_or_early": {
+    "After-sales and administrative": 0.1078,
+    "Delivery delay": 0.052,
+    "Incomplete order": 0.1602,
+    "Non-receipt and waiting": 0.33,
+    "Product quality": 0.1362,
+    "Unassigned": 0.0016,
+    "Wrong or defective item": 0.2122
+   },
+   "not_delivered": {
+    "After-sales and administrative": 0.1304,
+    "Delivery delay": 0.1087,
+    "Incomplete order": 0.0217,
+    "Non-receipt and waiting": 0.6751,
+    "Product quality": 0.0393,
+    "Unassigned": 0.0012,
+    "Wrong or defective item": 0.0236
+   }
+  },
+  "counts_by_status": {
+   "delivered_late": {
+    "After-sales and administrative": 256,
+    "Delivery delay": 453,
+    "Incomplete order": 99,
+    "Non-receipt and waiting": 1967,
+    "Product quality": 121,
+    "Unassigned": 3,
+    "Wrong or defective item": 74
+   },
+   "delivered_on_time_or_early": {
+    "After-sales and administrative": 960,
+    "Delivery delay": 463,
+    "Incomplete order": 1426,
+    "Non-receipt and waiting": 2938,
+    "Product quality": 1213,
+    "Unassigned": 14,
+    "Wrong or defective item": 1889
+   },
+   "not_delivered": {
+    "After-sales and administrative": 216,
+    "Delivery delay": 180,
+    "Incomplete order": 36,
+    "Non-receipt and waiting": 1118,
+    "Product quality": 65,
+    "Unassigned": 2,
+    "Wrong or defective item": 39
+   }
+  },
+  "chi2": 2542.3746930261127,
+  "dof": 10,
+  "p": 0.0,
+  "cramers_v": 0.3067106753222387,
+  "fulfilment_share_overall": 0.6414425066509015,
+  "fulfilment_share_delivered_on_time_or_early": 0.5421767943389869,
+  "product_share_delivered_on_time_or_early": 0.3484218802650792,
+  "fulfilment_share_delivered_late": 0.8472922973427515,
+  "product_share_delivered_late": 0.06559031281533804,
+  "fulfilment_share_not_delivered": 0.8055555555555556,
+  "product_share_not_delivered": 0.06280193236714976
+ },
+ "origin_of_negatives": {
+  "n": 94427,
+  "late_share_orders": 0.06672879578933992,
+  "share_of_low_ratings_from_late_orders": 0.32798931195724784,
+  "share_of_neg_text_from_late_orders": 0.2523167649536647,
+  "share_of_low_ratings_from_multi_item": 0.20816633266533066,
+  "low_rating_rate_late": 0.623393112204412,
+  "low_rating_rate_not_late": 0.09132378639675011,
+  "low_rating_rate_multi_item": 0.2663177011003098,
+  "low_rating_rate_single_item": 0.11147814638045753,
+  "multi_item_share_of_negative_texts": 0.20595625184747265,
+  "multi_item_share_of_incomplete_order_texts": 0.7046764894298526
+ }
+}

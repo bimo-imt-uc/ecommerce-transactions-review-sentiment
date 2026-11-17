@@ -1,0 +1,1721 @@
+{
+ "n_all_reviewed_delivered": 93958,
+ "n_text": 38082,
+ "delay_bin_counts": {
+  "early8_14": 35534,
+  "early15": 33921,
+  "early1_7": 16991,
+  "late1_3": 1821,
+  "late4_7": 1716,
+  "late8_14": 1425,
+  "late15": 1294,
+  "ontime": 1256
+ },
+ "raw_rates_by_bin": {
+  "low_rating": {
+   "early15": 0.0887,
+   "early1_7": 0.1011,
+   "early8_14": 0.0883,
+   "late15": 0.7867,
+   "late1_3": 0.3196,
+   "late4_7": 0.6748,
+   "late8_14": 0.8035,
+   "ontime": 0.1226
+  },
+  "neg_text_lr": {
+   "early15": 0.2437,
+   "early1_7": 0.2855,
+   "early8_14": 0.2533,
+   "late15": 0.8999,
+   "late1_3": 0.5845,
+   "late4_7": 0.8418,
+   "late8_14": 0.8943,
+   "ontime": 0.3719
+  },
+  "neg_text_leia": {
+   "early15": 0.1762,
+   "early1_7": 0.2127,
+   "early8_14": 0.183,
+   "late15": 0.6903,
+   "late1_3": 0.4361,
+   "late4_7": 0.666,
+   "late8_14": 0.7077,
+   "ontime": 0.2459
+  }
+ },
+ "outcome_prevalence": {
+  "low_rating_all": 0.12687583814044573,
+  "neg_text_lr": 0.31030408066803217,
+  "neg_text_leia": 0.22932093902631165,
+  "low_rating_text": 0.23541305603697285
+ },
+ "Y1_low_rating_all": {
+  "n": 93958,
+  "events": 11921,
+  "pseudo_R2": 0.19339771690561125,
+  "AUC_in_sample": 0.7531093262327735,
+  "clusters": 2915,
+  "table": [
+   {
+    "term": "Intercept",
+    "OR": 0.0339,
+    "lo": 0.0198,
+    "hi": 0.058,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early15]",
+    "OR": 0.5453,
+    "lo": 0.5005,
+    "hi": 0.5942,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early8_14]",
+    "OR": 0.7471,
+    "lo": 0.6913,
+    "hi": 0.8073,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late15]",
+    "OR": 29.1695,
+    "lo": 24.8825,
+    "hi": 34.1951,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late1_3]",
+    "OR": 4.0143,
+    "lo": 3.5257,
+    "hi": 4.5706,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late4_7]",
+    "OR": 18.1774,
+    "lo": 16.0415,
+    "hi": 20.5976,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late8_14]",
+    "OR": 34.7769,
+    "lo": 29.9337,
+    "hi": 40.4038,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.ontime]",
+    "OR": 1.2294,
+    "lo": 1.018,
+    "hi": 1.4846,
+    "p": 0.0319
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i2_5]",
+    "OR": 1.0728,
+    "lo": 1.0034,
+    "hi": 1.147,
+    "p": 0.0395
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i6p]",
+    "OR": 1.0805,
+    "lo": 1.0004,
+    "hi": 1.167,
+    "p": 0.0489
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.boleto]",
+    "OR": 0.9496,
+    "lo": 0.8825,
+    "hi": 1.0219,
+    "p": 0.1672
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.debit_card]",
+    "OR": 1.0215,
+    "lo": 0.8424,
+    "hi": 1.2387,
+    "p": 0.8288
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.voucher]",
+    "OR": 1.1738,
+    "lo": 1.0365,
+    "hi": 1.3293,
+    "p": 0.0115
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Center-West]",
+    "OR": 0.9676,
+    "lo": 0.8744,
+    "hi": 1.0708,
+    "p": 0.5245
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.North]",
+    "OR": 0.8963,
+    "lo": 0.7462,
+    "hi": 1.0766,
+    "p": 0.2419
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Northeast]",
+    "OR": 0.9588,
+    "lo": 0.8602,
+    "hi": 1.0686,
+    "p": 0.4464
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.South]",
+    "OR": 0.8622,
+    "lo": 0.8016,
+    "hi": 0.9273,
+    "p": 0.0001
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.auto]",
+    "OR": 0.9467,
+    "lo": 0.7525,
+    "hi": 1.1909,
+    "p": 0.6398
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.baby]",
+    "OR": 0.9689,
+    "lo": 0.7237,
+    "hi": 1.2971,
+    "p": 0.8318
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.computers_accessories]",
+    "OR": 1.0328,
+    "lo": 0.839,
+    "hi": 1.2714,
+    "p": 0.7606
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.cool_stuff]",
+    "OR": 0.8264,
+    "lo": 0.6976,
+    "hi": 0.9791,
+    "p": 0.0275
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.electronics]",
+    "OR": 0.9326,
+    "lo": 0.7668,
+    "hi": 1.1342,
+    "p": 0.4845
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.furniture_decor]",
+    "OR": 0.8776,
+    "lo": 0.7597,
+    "hi": 1.0138,
+    "p": 0.076
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.garden_tools]",
+    "OR": 0.7301,
+    "lo": 0.6073,
+    "hi": 0.8779,
+    "p": 0.0008
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.health_beauty]",
+    "OR": 0.7749,
+    "lo": 0.63,
+    "hi": 0.953,
+    "p": 0.0157
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.housewares]",
+    "OR": 0.8293,
+    "lo": 0.7112,
+    "hi": 0.9669,
+    "p": 0.0169
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.other]",
+    "OR": 0.8685,
+    "lo": 0.7465,
+    "hi": 1.0103,
+    "p": 0.0677
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.perfumery]",
+    "OR": 0.8426,
+    "lo": 0.6571,
+    "hi": 1.0805,
+    "p": 0.1771
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.sports_leisure]",
+    "OR": 0.7555,
+    "lo": 0.6529,
+    "hi": 0.8743,
+    "p": 0.0002
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.telephony]",
+    "OR": 1.1239,
+    "lo": 0.9587,
+    "hi": 1.3176,
+    "p": 0.1498
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.toys]",
+    "OR": 0.8539,
+    "lo": 0.6771,
+    "hi": 1.0768,
+    "p": 0.1819
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.watches_gifts]",
+    "OR": 1.0406,
+    "lo": 0.707,
+    "hi": 1.5315,
+    "p": 0.8401
+   },
+   {
+    "term": "promised_wk",
+    "OR": 1.2445,
+    "lo": 1.1942,
+    "hi": 1.2968,
+    "p": 0.0
+   },
+   {
+    "term": "log_value",
+    "OR": 1.0989,
+    "lo": 1.0154,
+    "hi": 1.1893,
+    "p": 0.0193
+   },
+   {
+    "term": "freight_ratio10",
+    "OR": 1.0594,
+    "lo": 1.0047,
+    "hi": 1.117,
+    "p": 0.0329
+   },
+   {
+    "term": "dist500",
+    "OR": 0.9429,
+    "lo": 0.905,
+    "hi": 0.9823,
+    "p": 0.0049
+   },
+   {
+    "term": "multi_item",
+    "OR": 2.9022,
+    "lo": 2.6367,
+    "hi": 3.1944,
+    "p": 0.0
+   },
+   {
+    "term": "multi_seller",
+    "OR": 3.7186,
+    "lo": 3.2773,
+    "hi": 4.2193,
+    "p": 0.0
+   },
+   {
+    "term": "photos2",
+    "OR": 0.9433,
+    "lo": 0.8724,
+    "hi": 1.0201,
+    "p": 0.1437
+   }
+  ]
+ },
+ "Y2_neg_text_lr": {
+  "n": 38082,
+  "events": 11817,
+  "pseudo_R2": 0.16080611672607503,
+  "AUC_in_sample": 0.7306372849061327,
+  "clusters": 2377,
+  "table": [
+   {
+    "term": "Intercept",
+    "OR": 0.0889,
+    "lo": 0.05,
+    "hi": 0.1583,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early15]",
+    "OR": 0.5252,
+    "lo": 0.4771,
+    "hi": 0.5781,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early8_14]",
+    "OR": 0.7618,
+    "lo": 0.7035,
+    "hi": 0.825,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late15]",
+    "OR": 21.1326,
+    "lo": 16.4164,
+    "hi": 27.2036,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late1_3]",
+    "OR": 3.4769,
+    "lo": 3.005,
+    "hi": 4.0227,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late4_7]",
+    "OR": 13.58,
+    "lo": 11.0921,
+    "hi": 16.626,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late8_14]",
+    "OR": 21.1983,
+    "lo": 16.7839,
+    "hi": 26.7738,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.ontime]",
+    "OR": 1.5508,
+    "lo": 1.2504,
+    "hi": 1.9233,
+    "p": 0.0001
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i2_5]",
+    "OR": 0.9335,
+    "lo": 0.8697,
+    "hi": 1.0019,
+    "p": 0.0564
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i6p]",
+    "OR": 0.8778,
+    "lo": 0.8027,
+    "hi": 0.9599,
+    "p": 0.0043
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.boleto]",
+    "OR": 0.8839,
+    "lo": 0.8165,
+    "hi": 0.957,
+    "p": 0.0023
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.debit_card]",
+    "OR": 0.9865,
+    "lo": 0.8085,
+    "hi": 1.2036,
+    "p": 0.8933
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.voucher]",
+    "OR": 1.0665,
+    "lo": 0.921,
+    "hi": 1.2351,
+    "p": 0.3895
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Center-West]",
+    "OR": 0.9271,
+    "lo": 0.8309,
+    "hi": 1.0344,
+    "p": 0.1753
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.North]",
+    "OR": 0.8543,
+    "lo": 0.6847,
+    "hi": 1.0657,
+    "p": 0.1628
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Northeast]",
+    "OR": 0.8417,
+    "lo": 0.7474,
+    "hi": 0.9478,
+    "p": 0.0044
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.South]",
+    "OR": 0.9455,
+    "lo": 0.8718,
+    "hi": 1.0253,
+    "p": 0.1754
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.auto]",
+    "OR": 0.982,
+    "lo": 0.7457,
+    "hi": 1.2931,
+    "p": 0.8968
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.baby]",
+    "OR": 1.1037,
+    "lo": 0.781,
+    "hi": 1.5596,
+    "p": 0.5761
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.computers_accessories]",
+    "OR": 1.2081,
+    "lo": 0.9445,
+    "hi": 1.5453,
+    "p": 0.1322
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.cool_stuff]",
+    "OR": 0.8363,
+    "lo": 0.6323,
+    "hi": 1.106,
+    "p": 0.21
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.electronics]",
+    "OR": 1.0695,
+    "lo": 0.8383,
+    "hi": 1.3646,
+    "p": 0.5886
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.furniture_decor]",
+    "OR": 0.9702,
+    "lo": 0.8237,
+    "hi": 1.1428,
+    "p": 0.7175
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.garden_tools]",
+    "OR": 0.7474,
+    "lo": 0.543,
+    "hi": 1.0289,
+    "p": 0.0742
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.health_beauty]",
+    "OR": 0.9939,
+    "lo": 0.8238,
+    "hi": 1.1993,
+    "p": 0.9495
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.housewares]",
+    "OR": 1.0232,
+    "lo": 0.8604,
+    "hi": 1.2168,
+    "p": 0.7955
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.other]",
+    "OR": 0.9714,
+    "lo": 0.8248,
+    "hi": 1.144,
+    "p": 0.7277
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.perfumery]",
+    "OR": 0.8355,
+    "lo": 0.646,
+    "hi": 1.0806,
+    "p": 0.1708
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.sports_leisure]",
+    "OR": 0.8677,
+    "lo": 0.7288,
+    "hi": 1.033,
+    "p": 0.1106
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.telephony]",
+    "OR": 1.3946,
+    "lo": 1.1297,
+    "hi": 1.7217,
+    "p": 0.002
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.toys]",
+    "OR": 0.984,
+    "lo": 0.7809,
+    "hi": 1.24,
+    "p": 0.8913
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.watches_gifts]",
+    "OR": 1.0878,
+    "lo": 0.7398,
+    "hi": 1.5997,
+    "p": 0.6686
+   },
+   {
+    "term": "promised_wk",
+    "OR": 1.26,
+    "lo": 1.2021,
+    "hi": 1.3206,
+    "p": 0.0
+   },
+   {
+    "term": "log_value",
+    "OR": 1.1362,
+    "lo": 1.0523,
+    "hi": 1.2268,
+    "p": 0.0011
+   },
+   {
+    "term": "freight_ratio10",
+    "OR": 1.0451,
+    "lo": 0.9903,
+    "hi": 1.103,
+    "p": 0.1087
+   },
+   {
+    "term": "dist500",
+    "OR": 0.9282,
+    "lo": 0.8886,
+    "hi": 0.9696,
+    "p": 0.0008
+   },
+   {
+    "term": "multi_item",
+    "OR": 3.3628,
+    "lo": 3.04,
+    "hi": 3.7199,
+    "p": 0.0
+   },
+   {
+    "term": "multi_seller",
+    "OR": 3.8717,
+    "lo": 3.2176,
+    "hi": 4.6588,
+    "p": 0.0
+   },
+   {
+    "term": "photos2",
+    "OR": 0.9565,
+    "lo": 0.882,
+    "hi": 1.0372,
+    "p": 0.282
+   }
+  ]
+ },
+ "Y3_neg_text_leia": {
+  "n": 38082,
+  "events": 8733,
+  "pseudo_R2": 0.10129260888150693,
+  "AUC_in_sample": 0.6872965091405208,
+  "clusters": 2377,
+  "table": [
+   {
+    "term": "Intercept",
+    "OR": 0.0816,
+    "lo": 0.0501,
+    "hi": 0.133,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early15]",
+    "OR": 0.5667,
+    "lo": 0.5144,
+    "hi": 0.6242,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early8_14]",
+    "OR": 0.7622,
+    "lo": 0.7105,
+    "hi": 0.8176,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late15]",
+    "OR": 7.7988,
+    "lo": 6.6117,
+    "hi": 9.199,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late1_3]",
+    "OR": 2.8022,
+    "lo": 2.411,
+    "hi": 3.2569,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late4_7]",
+    "OR": 7.2556,
+    "lo": 6.1571,
+    "hi": 8.55,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late8_14]",
+    "OR": 8.8405,
+    "lo": 7.4839,
+    "hi": 10.443,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.ontime]",
+    "OR": 1.2206,
+    "lo": 0.9707,
+    "hi": 1.5348,
+    "p": 0.0881
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i2_5]",
+    "OR": 0.9049,
+    "lo": 0.8389,
+    "hi": 0.9761,
+    "p": 0.0097
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i6p]",
+    "OR": 0.8866,
+    "lo": 0.8087,
+    "hi": 0.9719,
+    "p": 0.0102
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.boleto]",
+    "OR": 0.8989,
+    "lo": 0.8308,
+    "hi": 0.9726,
+    "p": 0.008
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.debit_card]",
+    "OR": 1.025,
+    "lo": 0.8232,
+    "hi": 1.2762,
+    "p": 0.8254
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.voucher]",
+    "OR": 1.0941,
+    "lo": 0.9475,
+    "hi": 1.2634,
+    "p": 0.2206
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Center-West]",
+    "OR": 0.8794,
+    "lo": 0.785,
+    "hi": 0.9852,
+    "p": 0.0266
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.North]",
+    "OR": 0.8786,
+    "lo": 0.706,
+    "hi": 1.0932,
+    "p": 0.2458
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Northeast]",
+    "OR": 0.8477,
+    "lo": 0.7483,
+    "hi": 0.9602,
+    "p": 0.0094
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.South]",
+    "OR": 0.9188,
+    "lo": 0.8436,
+    "hi": 1.0007,
+    "p": 0.0519
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.auto]",
+    "OR": 1.2529,
+    "lo": 1.0129,
+    "hi": 1.5499,
+    "p": 0.0377
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.baby]",
+    "OR": 1.1817,
+    "lo": 0.9522,
+    "hi": 1.4666,
+    "p": 0.1297
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.computers_accessories]",
+    "OR": 1.4931,
+    "lo": 1.2088,
+    "hi": 1.8443,
+    "p": 0.0002
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.cool_stuff]",
+    "OR": 1.1777,
+    "lo": 0.913,
+    "hi": 1.519,
+    "p": 0.208
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.electronics]",
+    "OR": 1.3709,
+    "lo": 1.0887,
+    "hi": 1.7263,
+    "p": 0.0073
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.furniture_decor]",
+    "OR": 1.1444,
+    "lo": 0.9906,
+    "hi": 1.3222,
+    "p": 0.0671
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.garden_tools]",
+    "OR": 0.9048,
+    "lo": 0.6892,
+    "hi": 1.1879,
+    "p": 0.4715
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.health_beauty]",
+    "OR": 1.1382,
+    "lo": 0.967,
+    "hi": 1.3398,
+    "p": 0.1195
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.housewares]",
+    "OR": 1.2328,
+    "lo": 1.0579,
+    "hi": 1.4368,
+    "p": 0.0074
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.other]",
+    "OR": 1.156,
+    "lo": 1.0084,
+    "hi": 1.3252,
+    "p": 0.0375
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.perfumery]",
+    "OR": 1.1753,
+    "lo": 0.9583,
+    "hi": 1.4415,
+    "p": 0.121
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.sports_leisure]",
+    "OR": 1.0666,
+    "lo": 0.917,
+    "hi": 1.2406,
+    "p": 0.4031
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.telephony]",
+    "OR": 1.4986,
+    "lo": 1.2463,
+    "hi": 1.802,
+    "p": 0.0
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.toys]",
+    "OR": 1.0065,
+    "lo": 0.8349,
+    "hi": 1.2134,
+    "p": 0.9457
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.watches_gifts]",
+    "OR": 1.1985,
+    "lo": 0.8805,
+    "hi": 1.6313,
+    "p": 0.2498
+   },
+   {
+    "term": "promised_wk",
+    "OR": 1.2011,
+    "lo": 1.1537,
+    "hi": 1.2503,
+    "p": 0.0
+   },
+   {
+    "term": "log_value",
+    "OR": 1.0823,
+    "lo": 1.0126,
+    "hi": 1.1567,
+    "p": 0.0199
+   },
+   {
+    "term": "freight_ratio10",
+    "OR": 1.0264,
+    "lo": 0.9765,
+    "hi": 1.0788,
+    "p": 0.3058
+   },
+   {
+    "term": "dist500",
+    "OR": 0.9394,
+    "lo": 0.9007,
+    "hi": 0.9799,
+    "p": 0.0037
+   },
+   {
+    "term": "multi_item",
+    "OR": 1.5018,
+    "lo": 1.366,
+    "hi": 1.6511,
+    "p": 0.0
+   },
+   {
+    "term": "multi_seller",
+    "OR": 3.4086,
+    "lo": 2.928,
+    "hi": 3.9682,
+    "p": 0.0
+   },
+   {
+    "term": "photos2",
+    "OR": 1.0009,
+    "lo": 0.9349,
+    "hi": 1.0715,
+    "p": 0.9797
+   }
+  ]
+ },
+ "Y4_low_rating_text": {
+  "n": 38082,
+  "events": 8965,
+  "pseudo_R2": 0.17415500556221852,
+  "AUC_in_sample": 0.744920735488365,
+  "clusters": 2377,
+  "table": [
+   {
+    "term": "Intercept",
+    "OR": 0.0695,
+    "lo": 0.0382,
+    "hi": 0.1265,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early15]",
+    "OR": 0.5404,
+    "lo": 0.4856,
+    "hi": 0.6014,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.early8_14]",
+    "OR": 0.7855,
+    "lo": 0.7153,
+    "hi": 0.8625,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late15]",
+    "OR": 18.7323,
+    "lo": 15.3643,
+    "hi": 22.8387,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late1_3]",
+    "OR": 3.6437,
+    "lo": 3.1143,
+    "hi": 4.263,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late4_7]",
+    "OR": 13.0541,
+    "lo": 10.9386,
+    "hi": 15.5787,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.late8_14]",
+    "OR": 21.6781,
+    "lo": 17.7193,
+    "hi": 26.5213,
+    "p": 0.0
+   },
+   {
+    "term": "C(delay_bin, Treatment('early1_7'))[T.ontime]",
+    "OR": 1.2323,
+    "lo": 0.9752,
+    "hi": 1.5572,
+    "p": 0.0801
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i2_5]",
+    "OR": 0.9627,
+    "lo": 0.8872,
+    "hi": 1.0447,
+    "p": 0.3622
+   },
+   {
+    "term": "C(inst_cat, Treatment('i1'))[T.i6p]",
+    "OR": 0.9471,
+    "lo": 0.8601,
+    "hi": 1.0429,
+    "p": 0.2689
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.boleto]",
+    "OR": 0.8815,
+    "lo": 0.8096,
+    "hi": 0.9598,
+    "p": 0.0037
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.debit_card]",
+    "OR": 0.9434,
+    "lo": 0.7562,
+    "hi": 1.1771,
+    "p": 0.6061
+   },
+   {
+    "term": "C(pay, Treatment('credit_card'))[T.voucher]",
+    "OR": 0.9723,
+    "lo": 0.8316,
+    "hi": 1.1368,
+    "p": 0.7247
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Center-West]",
+    "OR": 0.913,
+    "lo": 0.8096,
+    "hi": 1.0296,
+    "p": 0.1377
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.North]",
+    "OR": 0.7744,
+    "lo": 0.6083,
+    "hi": 0.9859,
+    "p": 0.0379
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.Northeast]",
+    "OR": 0.8548,
+    "lo": 0.7436,
+    "hi": 0.9827,
+    "p": 0.0275
+   },
+   {
+    "term": "C(customer_region, Treatment('Southeast'))[T.South]",
+    "OR": 0.9345,
+    "lo": 0.8506,
+    "hi": 1.0268,
+    "p": 0.1587
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.auto]",
+    "OR": 1.0751,
+    "lo": 0.8277,
+    "hi": 1.3964,
+    "p": 0.5874
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.baby]",
+    "OR": 1.1867,
+    "lo": 0.8329,
+    "hi": 1.6909,
+    "p": 0.3433
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.computers_accessories]",
+    "OR": 1.2701,
+    "lo": 0.9966,
+    "hi": 1.6186,
+    "p": 0.0533
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.cool_stuff]",
+    "OR": 0.8319,
+    "lo": 0.6503,
+    "hi": 1.064,
+    "p": 0.1427
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.electronics]",
+    "OR": 1.0602,
+    "lo": 0.8365,
+    "hi": 1.3439,
+    "p": 0.6286
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.furniture_decor]",
+    "OR": 0.9549,
+    "lo": 0.8202,
+    "hi": 1.1117,
+    "p": 0.5519
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.garden_tools]",
+    "OR": 0.7247,
+    "lo": 0.5645,
+    "hi": 0.9302,
+    "p": 0.0115
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.health_beauty]",
+    "OR": 0.9331,
+    "lo": 0.7598,
+    "hi": 1.146,
+    "p": 0.5091
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.housewares]",
+    "OR": 0.9354,
+    "lo": 0.787,
+    "hi": 1.1117,
+    "p": 0.4482
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.other]",
+    "OR": 0.9889,
+    "lo": 0.8384,
+    "hi": 1.1663,
+    "p": 0.8941
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.perfumery]",
+    "OR": 0.9349,
+    "lo": 0.6969,
+    "hi": 1.2542,
+    "p": 0.6536
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.sports_leisure]",
+    "OR": 0.8975,
+    "lo": 0.7621,
+    "hi": 1.0569,
+    "p": 0.1948
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.telephony]",
+    "OR": 1.24,
+    "lo": 1.0186,
+    "hi": 1.5096,
+    "p": 0.0321
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.toys]",
+    "OR": 1.0069,
+    "lo": 0.7654,
+    "hi": 1.3245,
+    "p": 0.961
+   },
+   {
+    "term": "C(cat, Treatment('bed_bath_table'))[T.watches_gifts]",
+    "OR": 1.0807,
+    "lo": 0.7129,
+    "hi": 1.6384,
+    "p": 0.7146
+   },
+   {
+    "term": "promised_wk",
+    "OR": 1.2457,
+    "lo": 1.1901,
+    "hi": 1.304,
+    "p": 0.0
+   },
+   {
+    "term": "log_value",
+    "OR": 1.0987,
+    "lo": 1.0122,
+    "hi": 1.1927,
+    "p": 0.0245
+   },
+   {
+    "term": "freight_ratio10",
+    "OR": 1.0368,
+    "lo": 0.9777,
+    "hi": 1.0994,
+    "p": 0.2275
+   },
+   {
+    "term": "dist500",
+    "OR": 0.9423,
+    "lo": 0.8994,
+    "hi": 0.9873,
+    "p": 0.0125
+   },
+   {
+    "term": "multi_item",
+    "OR": 3.2967,
+    "lo": 2.9612,
+    "hi": 3.6702,
+    "p": 0.0
+   },
+   {
+    "term": "multi_seller",
+    "OR": 2.8136,
+    "lo": 2.4156,
+    "hi": 3.2771,
+    "p": 0.0
+   },
+   {
+    "term": "photos2",
+    "OR": 0.9302,
+    "lo": 0.852,
+    "hi": 1.0156,
+    "p": 0.1066
+   }
+  ]
+ },
+ "adjusted_probs": {
+  "Y1_low_rating_all": {
+   "early15": 0.07323063827819395,
+   "early8_14": 0.09629771902613496,
+   "early1_7": 0.12310668761671674,
+   "ontime": 0.14570164514177109,
+   "late1_3": 0.34119031919568404,
+   "late4_7": 0.6844783588552098,
+   "late8_14": 0.8024858134352324,
+   "late15": 0.7740065837042781
+  },
+  "Y2_neg_text_lr": {
+   "early15": 0.2094693147587683,
+   "early8_14": 0.2710566795113811,
+   "early1_7": 0.32283112110458406,
+   "ontime": 0.4163616489324217,
+   "late1_3": 0.6022774956818712,
+   "late4_7": 0.8484961127175489,
+   "late8_14": 0.8964998861556575,
+   "late15": 0.8962162181174153
+  },
+  "Y3_neg_text_leia": {
+   "early15": 0.1533971654661742,
+   "early8_14": 0.1945573355006554,
+   "early1_7": 0.23908871711173404,
+   "ontime": 0.27591595765077703,
+   "late1_3": 0.45999159588178296,
+   "late4_7": 0.682602359965945,
+   "late8_14": 0.7229697260571191,
+   "late15": 0.6977092749960966
+  },
+  "Y4_low_rating_text": {
+   "early15": 0.14654108291615364,
+   "early8_14": 0.19524354938608515,
+   "early1_7": 0.23259970235908559,
+   "ontime": 0.26870285513896364,
+   "late1_3": 0.5009332905683046,
+   "late4_7": 0.7716356416011503,
+   "late8_14": 0.8468856694659683,
+   "late15": 0.8274914600114512
+  }
+ },
+ "adjusted_probs_CI": {
+  "Y1_low_rating_all": {
+   "early15": [
+    0.06942775752236052,
+    0.07703351903402739
+   ],
+   "early8_14": [
+    0.09060219825877361,
+    0.10199323979349631
+   ],
+   "early1_7": [
+    0.11466661853404247,
+    0.131546756699391
+   ],
+   "ontime": [
+    0.123976181270294,
+    0.16742710901324817
+   ],
+   "late1_3": [
+    0.31756944056459746,
+    0.36481119782677063
+   ],
+   "late4_7": [
+    0.66202936242614,
+    0.7069273552842796
+   ],
+   "late8_14": [
+    0.781495050827793,
+    0.8234765760426718
+   ],
+   "late15": [
+    0.7497519856559578,
+    0.7982611817525984
+   ]
+  },
+  "Y2_neg_text_lr": {
+   "early15": [
+    0.19988646292146572,
+    0.21905216659607085
+   ],
+   "early8_14": [
+    0.25838752755846006,
+    0.2837258314643022
+   ],
+   "early1_7": [
+    0.30610915002105155,
+    0.3395530921881166
+   ],
+   "ontime": [
+    0.368538794773015,
+    0.46418450309182846
+   ],
+   "late1_3": [
+    0.5718242083500792,
+    0.6327307830136631
+   ],
+   "late4_7": [
+    0.825393231831674,
+    0.8715989936034237
+   ],
+   "late8_14": [
+    0.8764680990122999,
+    0.916531673299015
+   ],
+   "late15": [
+    0.8740981048180413,
+    0.9183343314167892
+   ]
+  },
+  "Y3_neg_text_leia": {
+   "early15": [
+    0.1451308982239829,
+    0.16166343270836553
+   ],
+   "early8_14": [
+    0.18528141641935228,
+    0.20383325458195853
+   ],
+   "early1_7": [
+    0.22530137066456007,
+    0.252876063558908
+   ],
+   "ontime": [
+    0.23324183654933817,
+    0.3185900787522159
+   ],
+   "late1_3": [
+    0.4272706401135638,
+    0.4927125516500021
+   ],
+   "late4_7": [
+    0.6523979457008073,
+    0.7128067742310826
+   ],
+   "late8_14": [
+    0.6935275590458347,
+    0.7524118930684034
+   ],
+   "late15": [
+    0.6655599056297368,
+    0.7298586443624564
+   ]
+  },
+  "Y4_low_rating_text": {
+   "early15": [
+    0.13900164946320018,
+    0.1540805163691071
+   ],
+   "early8_14": [
+    0.18428504570036505,
+    0.20620205307180525
+   ],
+   "early1_7": [
+    0.21651034736154795,
+    0.24868905735662322
+   ],
+   "ontime": [
+    0.22672097226248444,
+    0.31068473801544283
+   ],
+   "late1_3": [
+    0.46905634980685573,
+    0.5328102313297535
+   ],
+   "late4_7": [
+    0.7455906638236962,
+    0.7976806193786043
+   ],
+   "late8_14": [
+    0.824424349824671,
+    0.8693469891072656
+   ],
+   "late15": [
+    0.8023422911931154,
+    0.8526406288297871
+   ]
+  }
+ },
+ "adjusted_probs_CI_method": "delta method with seller-clustered covariance",
+ "Y1_low_rating_all_AME": [
+  {
+   "term": "promised_wk",
+   "dy/dx": 0.01886,
+   "Std. Err.": 0.00186,
+   "z": 10.11655,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.01521,
+   "Cont. Int. Hi.": 0.02252
+  },
+  {
+   "term": "log_value",
+   "dy/dx": 0.00813,
+   "Std. Err.": 0.00345,
+   "z": 2.35812,
+   "Pr(>|z|)": 0.01837,
+   "Conf. Int. Low": 0.00137,
+   "Cont. Int. Hi.": 0.01489
+  },
+  {
+   "term": "freight_ratio10",
+   "dy/dx": 0.00497,
+   "Std. Err.": 0.00231,
+   "z": 2.14855,
+   "Pr(>|z|)": 0.03167,
+   "Conf. Int. Low": 0.00044,
+   "Cont. Int. Hi.": 0.00951
+  },
+  {
+   "term": "dist500",
+   "dy/dx": -0.00507,
+   "Std. Err.": 0.00183,
+   "z": -2.77068,
+   "Pr(>|z|)": 0.00559,
+   "Conf. Int. Low": -0.00866,
+   "Cont. Int. Hi.": -0.00148
+  },
+  {
+   "term": "multi_item",
+   "dy/dx": 0.0919,
+   "Std. Err.": 0.00409,
+   "z": 22.49383,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.08389,
+   "Cont. Int. Hi.": 0.0999
+  },
+  {
+   "term": "multi_seller",
+   "dy/dx": 0.11328,
+   "Std. Err.": 0.00561,
+   "z": 20.20534,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.10229,
+   "Cont. Int. Hi.": 0.12426
+  },
+  {
+   "term": "photos2",
+   "dy/dx": -0.00503,
+   "Std. Err.": 0.00344,
+   "z": -1.46212,
+   "Pr(>|z|)": 0.14371,
+   "Conf. Int. Low": -0.01177,
+   "Cont. Int. Hi.": 0.00171
+  }
+ ],
+ "Y2_neg_text_lr_AME": [
+  {
+   "term": "promised_wk",
+   "dy/dx": 0.0393,
+   "Std. Err.": 0.00409,
+   "z": 9.6131,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.03129,
+   "Cont. Int. Hi.": 0.04732
+  },
+  {
+   "term": "log_value",
+   "dy/dx": 0.02172,
+   "Std. Err.": 0.0066,
+   "z": 3.2926,
+   "Pr(>|z|)": 0.00099,
+   "Conf. Int. Low": 0.00879,
+   "Cont. Int. Hi.": 0.03465
+  },
+  {
+   "term": "freight_ratio10",
+   "dy/dx": 0.00751,
+   "Std. Err.": 0.00466,
+   "z": 1.61191,
+   "Pr(>|z|)": 0.10698,
+   "Conf. Int. Low": -0.00162,
+   "Cont. Int. Hi.": 0.01663
+  },
+  {
+   "term": "dist500",
+   "dy/dx": -0.01267,
+   "Std. Err.": 0.00382,
+   "z": -3.31902,
+   "Pr(>|z|)": 0.0009,
+   "Conf. Int. Low": -0.02015,
+   "Cont. Int. Hi.": -0.00519
+  },
+  {
+   "term": "multi_item",
+   "dy/dx": 0.20629,
+   "Std. Err.": 0.00833,
+   "z": 24.76381,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.18996,
+   "Cont. Int. Hi.": 0.22261
+  },
+  {
+   "term": "multi_seller",
+   "dy/dx": 0.23025,
+   "Std. Err.": 0.01615,
+   "z": 14.25585,
+   "Pr(>|z|)": 0.0,
+   "Conf. Int. Low": 0.1986,
+   "Cont. Int. Hi.": 0.26191
+  },
+  {
+   "term": "photos2",
+   "dy/dx": -0.00757,
+   "Std. Err.": 0.00704,
+   "z": -1.07499,
+   "Pr(>|z|)": 0.28238,
+   "Conf. Int. Low": -0.02136,
+   "Cont. Int. Hi.": 0.00623
+  }
+ ],
+ "review_before_delivery_by_bin": {
+  "early15": 0.0012,
+  "early1_7": 0.002,
+  "early8_14": 0.0011,
+  "late15": 1.0,
+  "late1_3": 0.2054,
+  "late4_7": 0.9068,
+  "late8_14": 0.9993,
+  "ontime": 0.0032
+ },
+ "review_minus_estimated_days_late_orders": {
+  "count": 6256.0,
+  "mean": 2.35,
+  "std": 1.54,
+  "min": -28.0,
+  "25%": 2.0,
+  "50%": 2.0,
+  "75%": 2.0,
+  "max": 15.0
+ },
+ "sensitivity": {
+  "S1_review_after_delivery_Y1": {
+   "n": 89190,
+   "late_ORs": {
+    "late1_3": [
+     2.7771636919190947,
+     2.3977860524540744,
+     3.216566450463753
+    ],
+    "late4p": [
+     3.01290963673868,
+     2.044001997534092,
+     4.441103526368447
+    ]
+   }
+  },
+  "S1_review_after_delivery_Y2": {
+   "n": 35065,
+   "late_ORs": {
+    "late1_3": [
+     2.5346606091414308,
+     2.142477721676002,
+     2.9986330025908017
+    ],
+    "late4p": [
+     2.053437862025521,
+     1.2087508715470716,
+     3.4884004243183186
+    ]
+   }
+  },
+  "S2_single_item_Y1": {
+   "n": 84636,
+   "late_ORs": {
+    "late1_3": [
+     4.167083756685827,
+     3.6348083869706365,
+     4.777304657235881
+    ],
+    "late4_7": [
+     19.458749518926936,
+     17.061866453971415,
+     22.192351221469334
+    ],
+    "late8_14": [
+     37.17732884549826,
+     31.936369478284227,
+     43.27836265252819
+    ],
+    "late15": [
+     31.144647576501043,
+     26.3496880379412,
+     36.81216533826718
+    ]
+   }
+  },
+  "S2_single_item_Y2": {
+   "n": 33360,
+   "late_ORs": {
+    "late1_3": [
+     3.523559232802381,
+     3.019329467108115,
+     4.111995660731362
+    ],
+    "late4_7": [
+     13.790865885789572,
+     11.211983717282752,
+     16.962919914579313
+    ],
+    "late8_14": [
+     21.213015652929098,
+     16.68391214003411,
+     26.971613690750043
+    ],
+    "late15": [
+     23.126513157615292,
+     17.774550573216132,
+     30.089965348281652
+    ]
+   }
+  },
+  "S3_southeast_Y1": {
+   "n": 64600,
+   "late_ORs": {
+    "late1_3": [
+     4.175764642137326,
+     3.590457488514414,
+     4.856487063919811
+    ],
+    "late4_7": [
+     19.532395431045632,
+     16.797694481587566,
+     22.712311602816758
+    ],
+    "late8_14": [
+     34.50348849214358,
+     28.44199954658579,
+     41.85678704401753
+    ],
+    "late15": [
+     31.28856967653723,
+     25.797447079840516,
+     37.94850666322511
+    ]
+   }
+  },
+  "S3_southeast_Y2": {
+   "n": 25926,
+   "late_ORs": {
+    "late1_3": [
+     3.6767846409462077,
+     3.081853886629343,
+     4.3865626967421
+    ],
+    "late4_7": [
+     15.667472336641875,
+     12.063471745826744,
+     20.348179578101686
+    ],
+    "late8_14": [
+     21.786090837776776,
+     15.8902045626016,
+     29.86958110715175
+    ],
+    "late15": [
+     22.925957830605647,
+     16.831973507644207,
+     31.226257706026473
+    ]
+   }
+  },
+  "S4_threshold_0.7_Y2": {
+   "n": 38082,
+   "late_ORs": {
+    "late1_3": [
+     3.3388338348205258,
+     2.8824546423072994,
+     3.867471568475029
+    ],
+    "late4_7": [
+     12.640776083641523,
+     10.467878549686478,
+     15.264718561484393
+    ],
+    "late8_14": [
+     17.546293703829956,
+     14.449901465386969,
+     21.30619530372126
+    ],
+    "late15": [
+     19.10843008878997,
+     15.04410077315149,
+     24.270782678470766
+    ]
+   }
+  },
+  "S5_continuous_Y1": {
+   "OR_per_late_day": [
+    1.2191722384078767,
+    1.2015586696477343,
+    1.2370440033030103
+   ],
+   "OR_per_early_day": [
+    0.9275054232998714,
+    0.9226006178966879,
+    0.9324363040335677
+   ]
+  }
+ },
+ "early_warning": {
+  "cut": "2018-05-07 09:59:27.750000",
+  "low_rating": {
+   "n_train": 70468,
+   "n_test": 23490,
+   "prev_test": 0.09885057471264368,
+   "AUC_GBM": 0.7121069262234514,
+   "AP_GBM": 0.33027366764866534,
+   "AUC_logit": 0.6831602257612778,
+   "AUC_delay_only": 0.5807008514957327,
+   "perm_importance_top": {
+    "n_items": 0.0608,
+    "delay_days": 0.0318,
+    "delivery_days": 0.0303,
+    "cat": 0.019,
+    "distance_km": 0.0044,
+    "photos_mean": 0.0039,
+    "desc_len_mean": 0.0037,
+    "weight_total": 0.0028
+   }
+  },
+  "neg_text_lr": {
+   "n_train": 29030,
+   "n_test": 9052,
+   "prev_test": 0.2725364560318162,
+   "AUC_GBM": 0.6897633731081714,
+   "AP_GBM": 0.5331919901491952,
+   "AUC_logit": 0.6763562394911233,
+   "AUC_delay_only": 0.5596594562269028,
+   "perm_importance_top": {
+    "n_items": 0.0692,
+    "delay_days": 0.0377,
+    "delivery_days": 0.0226,
+    "cat": 0.0092,
+    "distance_km": 0.0082,
+    "weight_total": 0.0041,
+    "n_sellers": 0.0032,
+    "freight_ratio": 0.0019
+   }
+  }
+ }
+}

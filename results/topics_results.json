@@ -1,0 +1,650 @@
+{
+ "n_docs": 13532,
+ "vocab": 2868,
+ "selection": {
+  "4": {
+   "mean_npmi": 0.10838657108823956,
+   "min_npmi": 0.04106718940787486,
+   "recon_err": 112.50012587623293
+  },
+  "5": {
+   "mean_npmi": 0.10683359033239026,
+   "min_npmi": 0.03942672581543441,
+   "recon_err": 112.04910875497121
+  },
+  "6": {
+   "mean_npmi": 0.1048860325138839,
+   "min_npmi": 0.025242145314066426,
+   "recon_err": 111.63971126434927
+  },
+  "7": {
+   "mean_npmi": 0.12794885928318486,
+   "min_npmi": 0.025242145314066437,
+   "recon_err": 111.254886559638
+  },
+  "8": {
+   "mean_npmi": 0.1396784454536955,
+   "min_npmi": 0.025242145314066426,
+   "recon_err": 110.94428205811562
+  },
+  "9": {
+   "mean_npmi": 0.1366387511338363,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 110.65650523330943
+  },
+  "10": {
+   "mean_npmi": 0.12886647535504986,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 110.41413573783134
+  },
+  "11": {
+   "mean_npmi": 0.13222499353709058,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 110.17615835391528
+  },
+  "12": {
+   "mean_npmi": 0.1475772357153871,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 109.94200158369406
+  },
+  "13": {
+   "mean_npmi": 0.1499817819283351,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 109.7064692324819
+  },
+  "14": {
+   "mean_npmi": 0.1522164488863512,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 109.48480449941698
+  },
+  "15": {
+   "mean_npmi": 0.1562738468382493,
+   "min_npmi": -0.007942179539616364,
+   "recon_err": 109.27907031545993
+  },
+  "16": {
+   "mean_npmi": 0.14575640175326077,
+   "min_npmi": -0.047640403326100346,
+   "recon_err": 109.06387960425363
+  }
+ },
+ "best_k": 15,
+ "stability_jaccard": 0.646757128129677,
+ "chi2": 2925.8357884293728,
+ "dof": 30,
+ "p": 0.0,
+ "cramers_v": 0.32879785945712303,
+ "status_counts": {
+  "delivered_on_time_or_early": 8903,
+  "delivered_late": 2973,
+  "not_delivered": 1656
+ },
+ "crosstab_col_pct": {
+  "delivered_late": {
+   "-1": 0.001,
+   "0": 0.1107,
+   "1": 0.0108,
+   "2": 0.152,
+   "3": 0.0861,
+   "4": 0.0996,
+   "5": 0.1524,
+   "6": 0.0141,
+   "7": 0.0303,
+   "8": 0.2133,
+   "9": 0.0309,
+   "10": 0.0138,
+   "11": 0.0414,
+   "12": 0.0104,
+   "13": 0.0178,
+   "14": 0.0155
+  },
+  "delivered_on_time_or_early": {
+   "-1": 0.0016,
+   "0": 0.0382,
+   "1": 0.0476,
+   "2": 0.0416,
+   "3": 0.0573,
+   "4": 0.0429,
+   "5": 0.052,
+   "6": 0.1646,
+   "7": 0.0811,
+   "8": 0.1501,
+   "9": 0.0357,
+   "10": 0.039,
+   "11": 0.0331,
+   "12": 0.0551,
+   "13": 0.0851,
+   "14": 0.075
+  },
+  "not_delivered": {
+   "-1": 0.0012,
+   "0": 0.1063,
+   "1": 0.0139,
+   "2": 0.0839,
+   "3": 0.0936,
+   "4": 0.061,
+   "5": 0.1087,
+   "6": 0.0097,
+   "7": 0.0332,
+   "8": 0.3303,
+   "9": 0.0284,
+   "10": 0.0326,
+   "11": 0.0694,
+   "12": 0.006,
+   "13": 0.0127,
+   "14": 0.0091
+  }
+ },
+ "topics": [
+  {
+   "topic": 0,
+   "top_terms": [
+    "nao recebi",
+    "recebi",
+    "recebi produto",
+    "momento",
+    "momento nao",
+    "produto nao",
+    "agora nao",
+    "recebi nao",
+    "hoje",
+    "produto nem",
+    "recebi mercadoria",
+    "agora"
+   ],
+   "npmi": 0.13726473166969522,
+   "n_docs": 845,
+   "share": 0.06244457582027786,
+   "mean_stars": 1.4745562130177514,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0382,
+    "delivered_late": 0.1107,
+    "not_delivered": 0.1063
+   },
+   "examples": [
+    "Não recebi o produto",
+    "0. Nao recebi o produto",
+    "Não recebi o produto.",
+    "Não recebi o produto",
+    "Não recebi o produto",
+    "Não recebi o produto....."
+   ]
+  },
+  {
+   "topic": 1,
+   "top_terms": [
+    "comprei",
+    "outro",
+    "comprei produto",
+    "errado",
+    "diferente",
+    "entregaram",
+    "produto comprei",
+    "produto errado",
+    "modelo",
+    "recebi",
+    "outro produto",
+    "recebi outro"
+   ],
+   "npmi": 0.14897747253527824,
+   "n_docs": 479,
+   "share": 0.035397576115873484,
+   "mean_stars": 1.7348643006263047,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0476,
+    "delivered_late": 0.0108,
+    "not_delivered": 0.0139
+   },
+   "examples": [
+    "comprei um termostato e não aquecedor",
+    "Comprei um recibie outro",
+    "Comprei o falcon e recebi o homem formiga.",
+    "comprei um produto e recebi outro",
+    "Comprei um produto e recebi outro",
+    "Produto errado. Comprei um produto ,mandaram outro"
+   ]
+  },
+  {
+   "topic": 2,
+   "top_terms": [
+    "ainda",
+    "ainda nao",
+    "produto ainda",
+    "nao recebi",
+    "aguardando",
+    "avaliar",
+    "recebi ainda",
+    "ainda aguardando",
+    "posso",
+    "nao posso",
+    "entrega ainda",
+    "nao avaliar"
+   ],
+   "npmi": 0.20054557581727678,
+   "n_docs": 961,
+   "share": 0.07101684895063554,
+   "mean_stars": 1.7669094693028096,
+   "share_by_status": {
+    "delivered_late": 0.152,
+    "delivered_on_time_or_early": 0.0416,
+    "not_delivered": 0.0839
+   },
+   "examples": [
+    "Ainda não tive problemad",
+    "Ainda não testamos o produto",
+    "Ainda nao rrecebi",
+    "Ainda nao recevi o produto.",
+    "Ainda não recabi",
+    "Ainda não conferi"
+   ]
+  },
+  {
+   "topic": 3,
+   "top_terms": [
+    "entregue",
+    "nao entregue",
+    "produto nao",
+    "entregue produto",
+    "produto entregue",
+    "entregue nao",
+    "momento",
+    "entregue prazo",
+    "entregue ainda",
+    "produto ainda",
+    "prazo",
+    "entregue momento"
+   ],
+   "npmi": 0.10774358914879853,
+   "n_docs": 921,
+   "share": 0.06806089269878805,
+   "mean_stars": 1.6264929424538546,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0573,
+    "delivered_late": 0.0861,
+    "not_delivered": 0.0936
+   },
+   "examples": [
+    "O produto não foi entregue.",
+    "Produto não entregue",
+    "Produto não entregue",
+    "Produto não entregue",
+    "Produto nao entregue",
+    "O produto não foi entregue!"
+   ]
+  },
+  {
+   "topic": 4,
+   "top_terms": [
+    "chegou",
+    "nao chegou",
+    "produto nao",
+    "produto chegou",
+    "chegou ainda",
+    "chegou produto",
+    "so chegou",
+    "chegou prazo",
+    "produto ainda",
+    "chegou nao",
+    "prazo",
+    "chegou residencia"
+   ],
+   "npmi": -0.007942179539616364,
+   "n_docs": 779,
+   "share": 0.05756724800472953,
+   "mean_stars": 1.7278562259306804,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0429,
+    "delivered_late": 0.0996,
+    "not_delivered": 0.061
+   },
+   "examples": [
+    "Não chegou.",
+    "não chegou",
+    "Não chegou",
+    "O produto aimda não chegou !",
+    "Não chegou",
+    "Não chegou"
+   ]
+  },
+  {
+   "topic": 5,
+   "top_terms": [
+    "entrega",
+    "prazo",
+    "prazo entrega",
+    "demora",
+    "demora entrega",
+    "entrega produto",
+    "atraso",
+    "entrega nao",
+    "atraso entrega",
+    "passou",
+    "passou prazo",
+    "longo"
+   ],
+   "npmi": 0.1505481873547969,
+   "n_docs": 1096,
+   "share": 0.08099320130062075,
+   "mean_stars": 1.9854014598540146,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.052,
+    "delivered_late": 0.1524,
+    "not_delivered": 0.1087
+   },
+   "examples": [
+    "Rever a política de entrega",
+    "Não efetuou a entrega",
+    "Entrega rapidinha.",
+    "Não respeitou o prazo da entrega",
+    "O prazo da entrega nao foi comprido.",
+    "Demora demasiada na entrega"
+   ]
+  },
+  {
+   "topic": 6,
+   "top_terms": [
+    "veio",
+    "produto veio",
+    "defeito",
+    "veio defeito",
+    "nao veio",
+    "errado",
+    "faltando",
+    "veio errado",
+    "veio faltando",
+    "pedi",
+    "porem",
+    "troca"
+   ],
+   "npmi": 0.09394167621425994,
+   "n_docs": 1523,
+   "share": 0.11254803428909252,
+   "mean_stars": 2.07091267235719,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.1646,
+    "delivered_late": 0.0141,
+    "not_delivered": 0.0097
+   },
+   "examples": [
+    "O boné veio manchado!!",
+    "Veio uma corrente repetida",
+    "Veio com um trem estragad. Veio com um pigente estragado",
+    "O produto veio estragado",
+    "O produto veio estourado",
+    "O produto veio com defeito !"
+   ]
+  },
+  {
+   "topic": 7,
+   "top_terms": [
+    "muito",
+    "gostei",
+    "nao gostei",
+    "ruim",
+    "demorou",
+    "muito ruim",
+    "demorou muito",
+    "gostei produto",
+    "produto muito",
+    "achei",
+    "mas",
+    "material"
+   ],
+   "npmi": 0.10960775077844408,
+   "n_docs": 867,
+   "share": 0.06407035175879397,
+   "mean_stars": 2.2941176470588234,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0811,
+    "delivered_late": 0.0303,
+    "not_delivered": 0.0332
+   },
+   "examples": [
+    "Não gostei muito Rui",
+    "Muito rui eles nao ciporta com o criente",
+    "Não gruda muito😩",
+    "Não gostei",
+    "Não gostei da",
+    "Não gostei"
+   ]
+  },
+  {
+   "topic": 8,
+   "top_terms": [
+    "agora",
+    "ja",
+    "compra",
+    "mais",
+    "pedido",
+    "dia",
+    "nada",
+    "mas",
+    "loja",
+    "agora nao",
+    "lannister",
+    "fiz"
+   ],
+   "npmi": 0.10176019925176322,
+   "n_docs": 2517,
+   "share": 0.18600354714750222,
+   "mean_stars": 1.8375049662296385,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.1501,
+    "delivered_late": 0.2133,
+    "not_delivered": 0.3303
+   },
+   "examples": [
+    "Ja tem mais de 30 dias da compra e ate agora nada da mercadoria...",
+    "pessima estou esperando minha postagem pra devoluçao do meu pedido e ate agora nada ja esta co 10 dias e nada",
+    "Faz mais de 15 dias que fiz uma compra e nada do produto chegar. Mas receber que é bom eles receberam! Agora tenho que correr atrás de empresa, é o fim mesmo viu...",
+    "fiz UMA COMPRA E JÁ PAGUEI A 1 PARCELA E ATÉ AGORA NÃO CHEGOU O MEU PRODUTO JÁ MANDEI EMAIL JÁ LIGUEI MAS NADA ESPERO UM RETORNO URGENTE POIS DESDE DE MARÇO QUE FIZ A COMPRA ESTOU AAGUARDANDO RESPOST",
+    "Vendedor até agora não mando meu pedido",
+    "Ainda não recebi o meu pedido, estava programado para o dia 13/12 e até agora nada, hoje já é dia 17/12"
+   ]
+  },
+  {
+   "topic": 9,
+   "top_terms": [
+    "recomendo",
+    "nao recomendo",
+    "loja",
+    "recomendo produto",
+    "recomendo loja",
+    "recomendo nao",
+    "produto nao",
+    "nao funciona",
+    "funciona",
+    "ninguem",
+    "recomendo comprei",
+    "recomendo ninguem"
+   ],
+   "npmi": 0.1599753383191117,
+   "n_docs": 457,
+   "share": 0.033771800177357376,
+   "mean_stars": 1.5733041575492341,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0357,
+    "delivered_late": 0.0309,
+    "not_delivered": 0.0284
+   },
+   "examples": [
+    "não recomendo",
+    "Não recomendo",
+    "Não recomendo",
+    "Não recomendo.",
+    "entrega muitooooo demoradaa. não recomendo.",
+    "Não recomendo a loja."
+   ]
+  },
+  {
+   "topic": 10,
+   "top_terms": [
+    "nota",
+    "fiscal",
+    "nota fiscal",
+    "sem",
+    "recebi nota",
+    "fiscal produto",
+    "sem nota",
+    "nem",
+    "emitida",
+    "veio nota",
+    "fiscal nao",
+    "nao veio"
+   ],
+   "npmi": 0.17758559241760669,
+   "n_docs": 442,
+   "share": 0.032663316582914576,
+   "mean_stars": 1.9389140271493213,
+   "share_by_status": {
+    "delivered_late": 0.0138,
+    "delivered_on_time_or_early": 0.039,
+    "not_delivered": 0.0326
+   },
+   "examples": [
+    "Nao forneceram a nota fiscal n recomendo",
+    "Preciso da nota fiscal",
+    "Faltou a nota fiscal",
+    "Recebi o produto sem a respectiva Nota Fiscal",
+    "A nota fiscal não veio.",
+    "tranquilo, só nunca consigo imprimir a nota fiscal ...."
+   ]
+  },
+  {
+   "topic": 11,
+   "top_terms": [
+    "quero",
+    "dinheiro",
+    "volta",
+    "dinheiro volta",
+    "quero dinheiro",
+    "saber",
+    "receber",
+    "quero produto",
+    "devolver",
+    "gostaria",
+    "quero saber",
+    "devolucao"
+   ],
+   "npmi": 0.30402504992778795,
+   "n_docs": 533,
+   "share": 0.039388117055867575,
+   "mean_stars": 1.5046904315196998,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0331,
+    "delivered_late": 0.0414,
+    "not_delivered": 0.0694
+   },
+   "examples": [
+    "Quero meu dinheiro de volta",
+    "Eu quero meu dinheiro de volta",
+    "Quero meu dinheiro de volta",
+    "Quero meu dinheiro de volta.",
+    "Quero meu dinheiro de volta",
+    "Quero meu dinheiro de volta"
+   ]
+  },
+  {
+   "topic": 12,
+   "top_terms": [
+    "qualidade",
+    "pessima",
+    "pessima qualidade",
+    "produto pessima",
+    "baixa",
+    "baixa qualidade",
+    "qualidade produto",
+    "qualidade nao",
+    "material",
+    "produto baixa",
+    "foto",
+    "inferior"
+   ],
+   "npmi": 0.20987497428801566,
+   "n_docs": 532,
+   "share": 0.03931421814957139,
+   "mean_stars": 1.8251879699248121,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0551,
+    "delivered_late": 0.0104,
+    "not_delivered": 0.006
+   },
+   "examples": [
+    "Péssima qualidade, estarei devolvendo o produto.",
+    "o oproduto é de péssima qualidade",
+    "Produto de péssima qualidade",
+    "Produto de péssima qualidade",
+    "o produto de péssima qualidade !",
+    "O produto de pessima qualidade se pudesse devolvia."
+   ]
+  },
+  {
+   "topic": 13,
+   "top_terms": [
+    "so",
+    "so recebi",
+    "dois",
+    "produtos",
+    "comprei dois",
+    "recebi",
+    "dois produtos",
+    "so chegou",
+    "so veio",
+    "comprei",
+    "produtos so",
+    "mas so"
+   ],
+   "npmi": 0.26636443053934067,
+   "n_docs": 832,
+   "share": 0.061483890038427434,
+   "mean_stars": 1.9723557692307692,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.0851,
+    "delivered_late": 0.0178,
+    "not_delivered": 0.0127
+   },
+   "examples": [
+    "Só recebi as sacolas",
+    "Só recebi uma fronha,eu comprei 2.",
+    "Comprei dois produtos e só recebi um!",
+    "Eu só recebi um lustre e comprei dois anota veio dois e só recebi um",
+    "dos 2 produtos só recebi 1",
+    "Só recebi as máscaras, não recebi as luvas."
+   ]
+  },
+  {
+   "topic": 14,
+   "top_terms": [
+    "apenas",
+    "recebi apenas",
+    "recebi",
+    "duas",
+    "unidades",
+    "dois",
+    "aguardando",
+    "produtos",
+    "aguardo",
+    "comprei duas",
+    "duas unidades",
+    "unidade"
+   ],
+   "npmi": 0.1838353138511804,
+   "n_docs": 729,
+   "share": 0.05387230268992019,
+   "mean_stars": 1.8299039780521262,
+   "share_by_status": {
+    "delivered_on_time_or_early": 0.075,
+    "delivered_late": 0.0155,
+    "not_delivered": 0.0091
+   },
+   "examples": [
+    "Recebi apenas 2 unodades",
+    "Comprei 2 bonecas e recebi apenas 1.",
+    "Recebi apenas um , comprei 3.",
+    "Eu conprei dois Tanner e recebi apenas um",
+    "Recebi apenas 1. E comprei 3. Estou aguardando os 2 restantes.",
+    "Recebi apenas 2 das 3 unidades previstas. Requeiro verificação e acerto da situação."
+   ]
+  }
+ ]
+}
